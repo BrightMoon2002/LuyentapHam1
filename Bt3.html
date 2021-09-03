@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập Hàm 1, bài tập 3</title>
+</head>
+<body>
+<h1>Kiểm tra 2 số bất kì:</h1>
+<button onclick="displayCheck()">Check</button>
+<script>
+    function checkNumber(a, b) {
+        if (a > b) {
+            return a;
+        } else {
+            let sum = a + b;
+            return sum;
+        }
+    }
+
+    function displayCheck() {
+        let a = parseInt(prompt("Enter the first Number:"));
+        let b = parseInt(prompt("Enter the second NUmber:"));
+        let result = checkNumber(a, b);
+        alert(result);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập Hàm 1, bải tập 5</title>
+</head>
+<body>
+<h1>Bài tập 5:</h1>
+<button onclick="displayStar()">Check</button>
+<script>
+    let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let array2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function checkStar() {
+        let inputStar = prompt("Enter the star")
+        for (let i = 0; i < array1.length; i++) {
+            if (inputStar === array1[i]) {
+                return i;
+            }
+        } return -1;
+    }
+
+    function displayStar() {
+       let i = checkStar()
+        if (i === -1) {
+            alert("Cant find the document");
+        } else {
+            alert(array2[i])
+        }
+    }
+</script>
+</body>
+</html>

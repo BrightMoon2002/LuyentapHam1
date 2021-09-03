@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập hàm 1, bài tập 2</title>
+</head>
+<body>
+<button onclick="displayArgument()">Display</button>
+<script>
+    function addArgument(a) {
+        let a1 = a + 1;
+        return a1;
+    }
+
+    function displayArgument() {
+        let argument = parseInt(prompt("Enter the Argument"));
+        let result = addArgument(argument);
+        alert(result);
+    }
+</script>
+</body>
+</html>
